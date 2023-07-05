@@ -1,4 +1,5 @@
 export default function cleanSet(set, startString) {
+  const parts = [];
   if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string') {
     return '';
   }
@@ -12,4 +13,4 @@ export default function cleanSet(set, startString) {
     }
   }
   return parts.join('-');
-} 
+}
